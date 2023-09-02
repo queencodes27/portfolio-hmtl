@@ -1,51 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
+
 ul,
 ol,
 li {
-  list-style: none;
+    list-style: none;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
+    font-weight: inherit;
+    font-size: inherit;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
+
 body {
-  line-height: 1;
-  font-family: Montserrat;
-  color: #21243d;
+    line-height: 1;
+    font-family: Montserrat;
+    color: #21243d;
 }
+
 .wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------- ----------container---------- ---------- */
 
 .container {
-  max-width: 1110px;
-  margin: 0 auto;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 
 /* [class*="_container"] {
@@ -70,142 +76,311 @@ body {
 } */
 
 :root {
-  --balck: #000;
-  --gray: #7e7f86;
-  --violet: #8643dc;
-  --green-blue: #25202f;
+    --balck: #000;
+    --gray: #7e7f86;
+    --violet: #8643dc;
+    --green-blue: #25202f;
 }
+
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
 }
 
 .container {
     max-width: 1440px;
     width: 100%;
-    margin:  0 auto;
+    margin: 0 auto;
 }
 
-.service_description h
+.right_side_img {
+    display: flex;
+    align-items: start;
+}
+
+footer h2 {
+    color: var(--violet);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+footer .line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--violet);
+    margin: 10px 0;
+}
+
+#email {
+    color: #8643DC;
+}
+
+.flex-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer button {
+    padding: 18px 50px;
+    background-color: #8643DC;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    opacity: .7;
+    transition: .5s ease;
+}
+
+footer i {
+    font-size: 28px;
+    color: #637085;
+    margin: 0 18px;
+}
+.center-text {
+    font-size: 36px;
+    color: #21243d;
+    font-family: 'Red Hat Display';
+    text-align: center;
+    font-weight: 500;
+    margin: 80px 0 30px 0;
+}
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding:0 0 50px 0;
+}
+footer input {
+    display: block;
+    width: 100%;
+    padding: 17px 0;
+    margin: 30px 0;
+    border-bottom: 1px solid #DAD2E3;
+    font-size: 20px;
+    outline: none;
+}
+
+.bottom-imgs {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.bottom-imgs img {
+    width: 270px;
+}
+section h2 {
+    color: var(--violet);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+section .line {
+    width: 50px;
+    height: 2px;
+    background-color: var(--violet);
+    margin: 10px 0;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.flex-box .cart {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    /* mobile compatible thing*/
+}
+
+.flex-box .cart p {
+    padding: 20px 0;
+    font-size: 16px;
+    color: #47444E;
+    font-family: 'Red Hat Display';
+    line-height: 32px;
+}
+
+.flex-title {
+    display: flex;
+    align-items: center;
+}
+
+.flex-title h1 {
+    margin: 0 20px;
+    color: #25202F;
+    font-family: 'Red Hat Display';
+    font-size: 24px;
+}
+
+.flex-explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-explore {
+    display: flex;
+    align-items: center;
+}
+
+.link-explore h1 {
+    color: #25202F;
+    font-family: 'Red Hat Display';
+    font-size: 24px;
+}
+
+.link-explore i {
+    font-size: 24px;
+    color: var(--violet);
+}
+
+.flex-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px 10px;
+}
+
+.title-all h1 {
+    margin: 15px 0;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Red Hat Display';
+}
 
 .header_menu {
-  min-height: 107px;
-  /* padding-bottom: 10px; */
+    min-height: 107px;
+    /* padding-bottom: 10px; */
 
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
 .menu_list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
 }
 
 .header_icon {
-  padding-right: 99px;
+    padding-right: 99px;
 }
+
 .menu_item {
-  color: var(--gray);
+    color: var(--gray);
 }
 
 .menu_link {
-  color: var(--gray);
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+    color: var(--gray);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .menu_link:hover {
-  color: var(--balck);
+    color: var(--balck);
 }
 
-.menu_item {
-}
+.menu_item {}
 
 .page {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .main_block_container {
-  position: relative;
-  padding: 183px 0 183px 0px;
-  flex-wrap: wrap;
+    position: relative;
+    padding: 183px 0 183px 0px;
+    flex-wrap: wrap;
 }
 
 .container_two_side {
-  column-gap: 250px;
-  row-gap: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    column-gap: 250px;
+    row-gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .title {
-  color: var(--gray);
+    color: var(--gray);
 
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
 }
 
 .left_title {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 120%;
-  padding: 0px 0px 20px 0px;
-  color: var(--green-blue);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 120%;
+    padding: 0px 0px 20px 0px;
+    color: var(--green-blue);
 }
 
 .left_sub_title {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-  color: var(--green-blue);
-  padding: 0px 0px 50px 0px;
+    color: var(--green-blue);
+    padding: 0px 0px 50px 0px;
 }
 
 .left_button {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 29px;
-  color: #ffffff;
-  padding: 14px 48px;
-  background: var(--violet);
-  border-radius: 30px;
-  transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #ffffff;
+    padding: 14px 48px;
+    background: var(--violet);
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
 }
 
 .left_button:hover {
-  cursor: pointer;
-  background-color: #de3b29;
-  text-decoration: underline;
+    cursor: pointer;
+    background-color: #de3b29;
+    text-decoration: underline;
 }
 
 @media (max-width: 760.98px) {
-  .container_two_side {
-    flex-direction: column-reverse;
-    text-align: center;
-    align-items: stretch;
-  }
-  .left_button {
-    width: 90%;
-  }
+    .container_two_side {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: stretch;
+    }
+
+    .left_button {
+        width: 90%;
+    }
 }
+
 @media (max-width: 479.98px) {
-  .left_title {
-    font-size: 32px;
-    padding: 0px 0px 20px 0px;
-  }
-  .left_sub_title {
-    font-size: 16px;
-    padding: 0px 23px 27px 23px;
-  }
+    .left_title {
+        font-size: 32px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .left_sub_title {
+        font-size: 16px;
+        padding: 0px 23px 27px 23px;
+    }
 }
