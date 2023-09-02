@@ -47,33 +47,13 @@ body {
     flex-direction: column;
 }
 
-/* ---------- ----------container---------- ---------- */
+
 
 .container {
     max-width: 1110px;
     margin: 0 auto;
 }
 
-/* [class*="_container"] {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-@media (max-width: 1199.98px) {
-  [class*="_container"] {
-    max-width: 970px;
-  }
-}
-@media (max-width: 991.98px) {
-  [class*="_container"] {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767.98px) {
-  [class*="_container"] {
-    max-width: none;
-    padding: 0px 15px;
-  }
-} */
 
 :root {
     --balck: #000;
@@ -144,6 +124,7 @@ footer i {
     color: #637085;
     margin: 0 18px;
 }
+
 .center-text {
     font-size: 36px;
     color: #21243d;
@@ -152,12 +133,14 @@ footer i {
     font-weight: 500;
     margin: 80px 0 30px 0;
 }
-.footer-icons{
+
+.footer-icons {
     display: flex;
     justify-content: center;
     gap: 50px;
-    padding:0 0 50px 0;
+    padding: 0 0 50px 0;
 }
+
 footer input {
     display: block;
     width: 100%;
@@ -179,6 +162,7 @@ footer input {
 .bottom-imgs img {
     width: 270px;
 }
+
 section h2 {
     color: var(--violet);
     font-size: 18px;
