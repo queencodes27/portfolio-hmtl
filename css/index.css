@@ -82,10 +82,14 @@ body {
   width: 100%;
   z-index: 50;
 }
-.header_container {
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin:  0 auto;
 }
-.menu {
-}
+
+.service_description h
 
 .header_menu {
   min-height: 107px;
